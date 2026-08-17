@@ -1,4 +1,4 @@
-# 🎯 habit-tracker
+#  habit-tracker
 
 *Sua jornada de consistência começa aqui*
 
@@ -13,15 +13,15 @@
 
 Um **gerenciador de hábitos** minimalista para quem quer:
 
-- 🔥 Manter streaks (sequência de dias)
-- 📊 Visualizar progresso com gráficos
-- 🎯 Alcançar metas consistentemente
+-  Manter streaks (sequência de dias)
+-  Visualizar progresso com gráficos
+-  Alcançar metas consistentemente
 
 Sem distrações. Sem firulas. **Apenas dados**.
 
 ---
 
-## 🚀 Começando
+##  Começando
 
 ### 1. Clone o repositório
 
@@ -60,7 +60,7 @@ python src/cli.py
 
 ---
 
-## 📖 Guia Rápido
+##  Guia Rápido
 
 ```bash
 # Crie um hábito
@@ -84,7 +84,7 @@ python src/cli.py
 
 ---
 
-## 📊 Exemplo de saída
+##  Exemplo de saída
 
 ```
 ==================================================
@@ -116,7 +116,7 @@ ESTATISTICAS:
 
 ---
 
-## 📋 Comandos Disponíveis
+##  Comandos Disponíveis
 
 | Comando | Descrição | Exemplo |
 |---------|-----------|---------|
@@ -134,7 +134,7 @@ ESTATISTICAS:
 
 ---
 
-## 📊 Gráficos
+##  Gráficos
 
 O sistema gera gráficos automáticos para visualizar seu progresso:
 
@@ -148,7 +148,7 @@ As cores são intuitivas:
 
 ---
 
-## 🧪 Testes
+##  Testes
 
 Qualidade é prioridade. O projeto inclui **10 testes automatizados**.
 
@@ -233,17 +233,6 @@ gerenciador-habitos/
 
 ---
 
-## 🚀 Próximas Melhorias
-
-- [ ] Exportar dados para CSV
-- [ ] Dashboard web com Streamlit
-- [ ] Notificações por e-mail
-- [ ] Versão para Linux/Mac
-- [ ] App mobile
-- [ ] Sincronização com nuvem
-
----
-
 ## 🤝 Como Contribuir
 
 1. Faça um **fork** do projeto
@@ -254,13 +243,13 @@ gerenciador-habitos/
 
 ---
 
-## 📝 Licença
+##  Licença
 
 Este projeto está sob a licença MIT.
 
 ---
 
-## 👤 Autor
+##  Autor
 
 **Gustavo Tavares da Silva**
 
