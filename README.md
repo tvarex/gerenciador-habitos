@@ -1,126 +1,84 @@
-# Gerenciador de Hábitos
+<div align="center">
 
-Sistema completo para monitorar seus hábitos diários com streaks, gráficos e estatísticas.
+# 🎯 habit-tracker
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-![Tests](https://img.shields.io/badge/tests-10%2F10-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Windows](https://img.shields.io/badge/platform-Windows-blue)
+*Sua jornada de consistência começa aqui*
 
-## Sobre o Projeto
+[![Made with Python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
+[![Tests](https://img.shields.io/badge/Tests-100%25-brightgreen)](https://github.com/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-O **Gerenciador de Hábitos** é uma ferramenta de linha de comando (CLI) que ajuda você a:
-- Criar e gerenciar hábitos diários
-- Calcular streaks (sequência de dias consecutivos)
-- Visualizar progresso com gráficos
-- Acompanhar estatísticas detalhadas
+</div>
 
-## Funcionalidades
+---
 
-| Funcionalidade | Descrição |
-|----------------|-----------|
-| Adicionar | Crie novos hábitos facilmente |
-| Registrar | Marque hábitos concluídos hoje |
-| Streak | Acompanhe dias consecutivos |
-| Listar | Visualize todos os hábitos com estatísticas |
-| Gráficos | Veja seu progresso visualmente |
-| Relatório | Análise completa de todos os hábitos |
-| Deletar | Remova hábitos não desejados |
-| Reset | Limpe todos os dados com segurança |
+## 💡 Sobre
 
-## Instalação
+Um **gerenciador de hábitos** minimalista para quem quer:
 
-### Windows (Recomendado)
+- 🔥 Manter streaks (sequência de dias)
+- 📊 Visualizar progresso com gráficos
+- 🎯 Alcançar metas consistentemente
 
-1. Clone o repositório:
+Sem distrações. Sem firulas. **Apenas dados**.
+
+---
+
+## 🚀 Começando
+
+### 1. Clone o repositório
+
 ```bash
-git clone https://github.com/seu-usuario/gerenciador-habitos.git
-cd gerenciador-habitos
+git clone https://github.com/tvarex/habit-tracker.git
+cd habit-tracker
 
-    Execute o instalador:
+2. Instale
 
+Windows:
 bash
 
 setup.bat
 
-    Pronto! Use o programa:
+Linux/Mac:
+bash
 
+pip install -r requirements.txt
+
+3. Use
+
+Windows:
 bash
 
 habitos.bat
 
-Linux / Mac
-
-    Clone o repositório:
-
+Linux/Mac:
 bash
 
-git clone https://github.com/seu-usuario/gerenciador-habitos.git
-cd gerenciador-habitos
+python src/cli.py
 
-    Instale as dependências:
-
+📖 Guia Rápido
 bash
 
-pip3 install -r requirements.txt
+# Crie um hábito
+> add "Meditar"
 
-    Execute:
+# Registre hoje
+> check "Meditar"
 
-bash
+# Veja seu progresso
+> list
 
-python3 src/cli.py
+# Visualize gráficos
+> graph "Meditar"
 
-Como Usar
-Modo Interativo (Recomendado)
-bash
+# Veja relatório completo
+> relatorio
 
-habitos.bat
+# Saia
+> exit
 
-Digite os comandos interativamente:
-text
-
-> help        # Mostra todos os comandos
-> add "Nome"  # Adiciona um hábito
-> check "Nome" # Registra hábito hoje
-> list        # Lista todos os hábitos
-> graph "Nome" # Gera gráfico de 30 dias
-> exit        # Sai do programa
-
-Modo Direto
-bash
-
-# Adicionar hábito
-habitos.bat add "Estudar Python"
-
-# Registrar hoje
-habitos.bat check "Estudar Python"
-
-# Ver lista
-habitos.bat list
-
-# Ver streak específico
-habitos.bat streak "Estudar Python"
-
-# Gerar gráfico
-habitos.bat graph "Estudar Python"
-
-# Ver relatório completo
-habitos.bat relatorio
-
-Comandos Disponíveis
-Comando	Descrição	Exemplo
-add "NOME"	Adiciona novo hábito	add "Estudar"
-check "NOME"	Registra hábito hoje	check "Estudar"
-list	Lista todos os hábitos	list
-streak "NOME"	Mostra streak do hábito	streak "Estudar"
-graph "NOME"	Gráfico de 30 dias	graph "Estudar"
-graphsem "NOME"	Gráfico de 7 dias	graphsem "Estudar"
-relatorio	Relatório completo	relatorio
-delete "NOME"	Remove um hábito	delete "Estudar"
-reset	Remove todos os hábitos	reset
-help	Mostra ajuda	help
-exit	Sai do programa	exit
-Exemplo de Uso
+📊 Exemplo de saída
 text
 
 ==================================================
@@ -149,15 +107,51 @@ ESTATISTICAS:
   Media de streak: 0.3 dia(s)
   Habito mais forte: Estudar Python (1 dia(s))
 
-Testes
+📋 Comandos Disponíveis
+Comando	Descrição	Exemplo
+add "NOME"	Adiciona novo hábito	add "Estudar"
+check "NOME"	Registra hábito hoje	check "Estudar"
+list	Lista todos os hábitos	list
+streak "NOME"	Mostra streak do hábito	streak "Estudar"
+graph "NOME"	Gráfico de 30 dias	graph "Estudar"
+graphsem "NOME"	Gráfico de 7 dias	graphsem "Estudar"
+relatorio	Relatório completo	relatorio
+delete "NOME"	Remove um hábito	delete "Estudar"
+reset	Remove todos os hábitos	reset
+help	Mostra ajuda	help
+exit	Sai do programa	exit
+📊 Gráficos
 
-O projeto inclui 10 testes automatizados.
-Rodar os testes:
+O sistema gera gráficos automáticos para visualizar seu progresso:
+
+    Gráfico de 30 dias: Visão mensal dos seus hábitos
+
+    Gráfico de 7 dias: Acompanhamento semanal
+
+    Relatório completo: Comparação entre todos os hábitos
+
+As cores são intuitivas:
+
+    ✅ Verde: Dia que você fez o hábito
+
+    ❌ Vermelho: Dia que você não fez
+
+🧪 Testes
+
+Qualidade é prioridade. O projeto inclui 10 testes automatizados.
+Rodar os testes
+
+Windows:
 bash
 
 testar.bat
 
-Saída esperada:
+Linux/Mac:
+bash
+
+pytest tests/ -v
+
+Resultado esperado
 text
 
 ============================= test session starts =============================
@@ -176,75 +170,95 @@ tests/test_sistema_completo.py::test_10_relatorio_final PASSED
 
 ============================= 10 passed in 0.85s =============================
 
-Estrutura do Projeto
+Cobertura de código
+bash
+
+pytest tests/ --cov=src
+
+🗂️ Estrutura do Projeto
 text
 
-gerenciador_habitos/
-├── src/                    # Código fonte
-│   ├── __init__.py
-│   ├── database.py         # Banco de dados SQLite
-│   ├── habit.py            # Lógica dos hábitos
-│   ├── report.py           # Gráficos e relatórios
-│   └── cli.py              # Interface de linha de comando
-├── tests/                  # Testes automatizados
-│   ├── __init__.py
-│   ├── test_habits.py
-│   └── test_sistema_completo.py
-├── data/                   # Banco de dados
-│   └── habitos.db
-├── requirements.txt        # Dependências
-├── setup.bat              # Instalador Windows
-├── habitos.bat            # Atalho principal
-├── testar.bat             # Atalho para testes
-├── limpar.bat             # Limpar dados
-├── atualizar.bat          # Atualizar projeto
-└── README.md              # Documentação
+📂 habit-tracker/
+├── 📂 src/                    # Código fonte
+│   ├── 📄 __init__.py
+│   ├── 📄 database.py         # Banco de dados SQLite
+│   ├── 📄 habit.py            # Lógica dos hábitos
+│   ├── 📄 report.py           # Gráficos e relatórios
+│   └── 📄 cli.py              # Interface de linha de comando
+├── 📂 tests/                  # Testes automatizados
+│   ├── 📄 __init__.py
+│   ├── 📄 test_habits.py
+│   └── 📄 test_sistema_completo.py
+├── 📂 data/                   # Banco de dados
+│   └── 📄 habitos.db
+├── 📄 requirements.txt        # Dependências
+├── 📄 setup.bat              # Instalador Windows
+├── 📄 habitos.bat            # Atalho principal
+├── 📄 testar.bat             # Atalho para testes
+├── 📄 limpar.bat             # Limpar dados
+├── 📄 atualizar.bat          # Atualizar projeto
+└── 📄 README.md              # Este arquivo
 
-Tecnologias Utilizadas
+🛠️ Tecnologias
+Tecnologia	Para quê
+Python 3.8+	Linguagem principal
+SQLite	Banco de dados local (leve e rápido)
+Matplotlib	Geração de gráficos
+Pytest	Testes automatizados
+Argparse	Interface de linha de comando
+🚀 Próximas Melhorias
 
-    Python 3.8+ - Linguagem principal
-
-    SQLite - Banco de dados local
-
-    Matplotlib - Geração de gráficos
-
-    Pytest - Testes automatizados
-
-    Argparse - Interface de linha de comando
-
-Próximas Melhorias
+Ideias para o futuro:
 
     □
 
-    Exportar dados para CSV/PDF
-    □
-
-    Notificações por e-mail
+    Exportar dados para CSV
     □
 
     Dashboard web com Streamlit
     □
 
+    Notificações por e-mail
+    □
+
     Versão para Linux/Mac
     □
 
-    Executável único (.exe)
+    App mobile (React Native)
+    □
 
-Contribuição
+    Sincronização com nuvem
+
+🤝 Como Contribuir
+
+Contribuições são sempre bem-vindas!
 
     Faça um fork do projeto
 
-    Crie uma branch: git checkout -b minha-feature
+    Crie sua branch (git checkout -b feature/AmazingFeature)
 
-    Commit suas mudanças: git commit -m 'Adiciona nova feature'
+    Commit suas mudanças (git commit -m 'Add some AmazingFeature')
 
-    Push: git push origin minha-feature
+    Push para a branch (git push origin feature/AmazingFeature)
 
     Abra um Pull Request
 
-Licença
+📝 Licença
 
-Este projeto está sob a licença MIT.
-Desenvolvedor
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+👤 Autor
 
-Seu Nome - seu-email@gmail.com
+Gustavo Tavares da Silva
+
+https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white
+https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white
+https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white
+⭐ Agradecimentos
+
+Obrigado por usar o habit-tracker!
+
+Se este projeto te ajudou de alguma forma, considere deixar uma estrela ⭐ no GitHub!
+<div align="center">
+
+Feito com Python
+</div> ```
