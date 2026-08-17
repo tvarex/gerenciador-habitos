@@ -32,3 +32,7 @@ Sem distrações. Sem firulas. **Apenas dados**.
 ```bash
 git clone https://github.com/tvarex/gerenciador-habitos.git
 cd gerenciador-habitos
+
+### 2. Instale
+
+Windows:
